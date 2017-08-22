@@ -17,7 +17,11 @@
 	<dubbo:protocol name="dubbo" port="20880" />
 
     <bean id="userDAO" class="com.keruis.server.DAO.DAOImp.UserDAOImp" />
+	<bean id="redis4GDB0DAO" class="com.keruis.server.DAO.DAOImp.Redis4GDB0DAOImp" />
+	<bean id="redis258MDb0DAO" class="com.keruis.server.DAO.DAOImp.Redis258MDb0DAOImp" />
 	<!-- 用户服务接口 -->
 	<dubbo:service interface="com.keruis.DAO.UserDAO" ref="userDAO" />
+	<dubbo:service interface="com.keruis.DAO.Redis4GDB0DAO" ref="redis4GDB0DAO" />
+	<dubbo:service interface="com.keruis.DAO.Redis258MDB0PoolDAO" ref="redis258MDb0DAO" />
 
 </beans>  

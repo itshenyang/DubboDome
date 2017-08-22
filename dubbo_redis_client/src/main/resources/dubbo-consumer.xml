@@ -14,6 +14,8 @@
 	
 	<!-- 用户服务接口 -->
 	<dubbo:reference interface="com.keruis.DAO.UserDAO" id="UserDAOClient" check="false"/>
+	<dubbo:reference interface="com.keruis.DAO.Redis258MDB0PoolDAO" id="Redis258MDB0PoolDAOClient" check="false"/>
+	<dubbo:reference interface="com.keruis.DAO.Redis4GDB0DAO" id="Redis4GDB0DAOOClient" check="false"/>
 
 
 </beans>  
