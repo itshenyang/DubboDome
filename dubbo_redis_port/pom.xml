@@ -11,7 +11,7 @@
 
 
 
-      <groupId>com.keruis</groupId>
+    <groupId>com.keruis</groupId>
     <artifactId>dubbo_redis_port</artifactId>
     <packaging>jar</packaging>
 
