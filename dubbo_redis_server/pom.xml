@@ -10,12 +10,18 @@
     <artifactId>dubbo_redis_server</artifactId>
     <packaging>war</packaging>
     <name>dubbo_redis_server Maven Webapp</name>
-    <url>http://maven.apache.org</url>
+    <description>The spring container module of dubbo project</description>
+
+    <properties>
+        <skip_maven_deploy>true</skip_maven_deploy>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.keruis</groupId>
             <artifactId>dubbo_redis_port</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../dubbo_redis_port/target/dubbo_redis_port-1.0-SNAPSHOT.jar</systemPath>
         </dependency>
 
 
@@ -32,7 +38,7 @@
                     <url>http://sh.keruis.com:8080/manager/text</url>
                     <username>keruis</username>
                     <password>Keruis@123</password>
-                    <path>/dubbo_redis_server</path>
+                    <path>/DubboRedisPool/dubbo_redis_server</path>
                 </configuration>
             </plugin>
             <plugin>
@@ -40,8 +46,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.6.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
         </plugins>
